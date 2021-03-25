@@ -5,7 +5,7 @@ Azure project testing Docker, Ansible, ELK stack, and beat configurations for hi
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/ELK_stack_diagram.png)
+(Diagrams/ELK_stack_diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the archive file may be used to install only certain pieces of it, such as Filebeat.
 
