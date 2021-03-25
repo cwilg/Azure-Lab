@@ -1,5 +1,5 @@
-# azure_project
-Azure project testing Docker, Ansible, ELK stack, and beat configurations for high availability web hosting.
+# Azure Lab
+Project in Azure that uses Docker, Ansible, ELK stack, and beat configurations to test availability and monitoring among web servers.
 
 ## Automated ELK Stack Deployment
 
