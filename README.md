@@ -86,7 +86,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Diagrams/Elk-Stack_ps.png)
+![Image depicts Docker processes currently running, which indicates successful installation of the ELK stack.](https://github.com/cwilg/Azure-Lab/blob/main/Diagrams/Elk-Stack_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
