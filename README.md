@@ -5,10 +5,11 @@ Project in Azure that uses Docker, Ansible, ELK stack, and beat configurations t
 
 The files in this repository were used to configure the network depicted below.
 
-(Diagrams/ELK_stack_diagram.png)
+![This is a diagram depicting the topology of the cloud-hosted environment created](https://github.com/cwilg/Azure-Lab/blob/main/Diagrams/ELK_Stack_diagram.png "Lab Diagram")
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the archive file may be used to install only certain pieces of it, such as Filebeat.
 
+[Ansible Files:](https://github.com/cwilg/Azure-Lab/tree/main/Ansible)
   - install-elk.yml
   - install-dvwa.yml
   - hosts
