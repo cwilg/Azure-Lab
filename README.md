@@ -107,7 +107,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the yml file (`install-elk.yml`) to the `/etc/ansible` directory.
 - Add an `[elk]` section of the Hosts file (`/etc/ansible/hosts`); update it to include the internal IP addresses of all servers that you need to configure.
-- Run the playbook (`ansible-playbook` command), and navigate to Kibana (http://`elk_server_ip`:5601/app/kibana) to check that the installation worked as expected.
+- Run the playbook (`ansible-playbook` command), and navigate to Kibana (http://`elk_server_ip`:5601/app/kibana) on your browser to check that the installation worked as expected. If successful, your browser should take you to a page similar to the following:
+
+![Screenshot of the Kibana Discover page, indicating successful installation of ELK and appropriate firewall rules.](https://github.com/cwilg/Azure-Lab/blob/main/Screenshots/Kibana_discover_filebeat.PNG "Kibana Discover console")
 
 
 In order to download the playbook, update the files, etc., you may run the following commands:
