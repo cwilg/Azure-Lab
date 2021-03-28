@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the archive file may be used to install only certain pieces of it, such as Filebeat.
 
-Ansible Files:
+#### Ansible Files:
   - [install-elk.yml](https://github.com/cwilg/Azure-Lab/tree/main/Ansible/install-elk.yml)
   - [install-dvwa.yml](https://github.com/cwilg/Azure-Lab/tree/main/Ansible/install-dvwa.yml)
   - [hosts](https://github.com/cwilg/Azure-Lab/tree/main/Ansible/hosts)
@@ -19,7 +19,7 @@ Ansible Files:
   - [filebeat-config.yml](https://github.com/cwilg/Azure-Lab/tree/main/Ansible/filebeat-config.yml)
   - [metricbeat-config.yml](https://github.com/cwilg/Azure-Lab/tree/main/Ansible/metricbeat-config.yml)
 
-This document contains the following details:
+#### This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
