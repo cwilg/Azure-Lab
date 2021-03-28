@@ -1,5 +1,5 @@
 # Azure Lab
-Project in Azure that uses Docker, Ansible, ELK stack, and beat configurations to test availability and monitoring among web servers.
+Project in Azure that uses Docker, Ansible, ELK stack, and beat configurations to test availability and monitoring among web servers. As a final result, this topology creates two different environments: one for Red Team and another for Blue Team.
 
 ## Automated ELK Stack Deployment
 
@@ -30,11 +30,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The main purpose of these peered networks is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly redundant, in addition to restricting public access to the network. Load balancers help protect data availability on the network. If one server goes down for any reason, the load balancer will determine another server to send traffic to.
+Load balancing ensures that the application will be highly redundant, in addition to restricting public access to the network. Load balancers help protect data availability on the network because if one server goes down for any reason, the load balancer will determine another server to send traffic to.
 
-The advantage of using a jump box is that we provide a single access point from which we can access and configure all of our web servers. Further, we install a provisioner (Ansible) on it to automate such configuration across multiple servers.
+The advantage of using a jump box is that it provides a single access point from which we can access and configure all of our web servers. Further, we install a provisioner (Ansible) on it to automate such configuration across multiple servers.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system metrics.
 - Filebeat logs changes to system files.
@@ -60,7 +60,7 @@ Only the `Jump-Box-Provisioner` machine can accept SSH connections from the Inte
 Machines within the network (`XCorpRedTeam_VNet`) can only be accessed by the Ansible container on the `Jump-Box-Provisioner` (`Jump-Box-Provisioner-ip` = 52.149.213.10).
 - The `Jump-Box-Provisioner` also has access to the `ELK-Server` (Internal IP = 10.1.0.4; `ELK-Server-ip` = 52.162.176.231) on the (peered) `ELK-BlueTeam-VNet`.
 
-A summary of the access policies in place can be found in the table below.
+A summary of the access policies in place can be found in the table below:
 
 | Name                    | Publicly Accessible | Allowed IP Addresses |
 |-------------------------|---------------------|----------------------|
@@ -74,8 +74,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- All servers are configured exactly the same way and any changes can be automatically implemented across all servers.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because all servers are configured exactly the same way and any changes can be automatically implemented across all servers.
 
 The playbook implements the following tasks:
 - Install Docker and PIP (Python package manager).
@@ -84,7 +83,7 @@ The playbook implements the following tasks:
 - Publish ports that ELK runs on (5601, 9200, 5044).
 - Enable Docker and ELK to launch on reboot.
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance:
 
 ![Image depicts Docker processes currently running, which indicates successful installation of the ELK stack.](https://github.com/cwilg/Azure-Lab/blob/main/Diagrams/Elk-Stack_ps.png)
 
@@ -107,8 +106,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the yml file (`install-elk.yml`) to the `/etc/ansible` directory.
-- Add an `[elk]` section of the Hosts file (`/etc/ansible/hosts`), update to include the internal IP addresses of all servers that you need to configure.
-- Run the playbook (`ansible-playbook` command), and navigate to Kibana (http://[elk_server_ip]:5601/app/kibana) to check that the installation worked as expected.
+- Add an `[elk]` section of the Hosts file (`/etc/ansible/hosts`); update it to include the internal IP addresses of all servers that you need to configure.
+- Run the playbook (`ansible-playbook` command), and navigate to Kibana (http://`elk_server_ip`:5601/app/kibana) to check that the installation worked as expected.
 
 
 In order to download the playbook, update the files, etc., you may run the following commands:
