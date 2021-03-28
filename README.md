@@ -114,5 +114,5 @@ SSH into the control node and follow the steps below:
 
 In order to download the playbook, update the files, etc., you may run the following commands:
 - `$ cd /etc/ansible`
-- `$ curl -i https://github.com/cwilg/Azure-Lab/blob/main/Ansible/install-elk.yml`
+- `$ curl https://raw.githubusercontent.com/cwilg/Azure-Lab/main/Ansible/install-elk.yml > install-elk.yml`
 - `$ ansible-playbook /etc/ansible/install-elk.yml`
