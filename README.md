@@ -44,10 +44,10 @@ The configuration details of each machine may be found below.
 
 | Name                 | Function   | IP Address | Operating System         |
 |----------------------|------------|------------|--------------------------|
-| Jump-Box-Provisioner | Gateway    | 10.0.0.1   | Linux-Ubuntu 20.04.2 LTS |
-| DVWA-VM1             | Web Server | 10.0.0.6   | Linux-Ubuntu 20.04.2 LTS |                  
-| DVWA-VM2             | Web Server | 10.0.0.7   | Linux-Ubuntu 20.04.2 LTS |
-| DVWA-VM3             | Web Server | 10.0.0.5   | Linux-Ubuntu 20.04.2 LTS |
+| Jump-Box-Provisioner | Gateway    | 10.0.0.4   | Linux-Ubuntu 20.04.2 LTS |
+| DVWA-VM1             | Web Server | 10.0.0.5   | Linux-Ubuntu 20.04.2 LTS |                  
+| DVWA-VM2             | Web Server | 10.0.0.6   | Linux-Ubuntu 20.04.2 LTS |
+| DVWA-VM3             | Web Server | 10.0.0.7   | Linux-Ubuntu 20.04.2 LTS |
 | ELK-Server           | ELK Stack  | 10.1.0.4   | Linux-Ubuntu 20.04.2 LTS |
 
 ### Access Policies
@@ -89,9 +89,9 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- `DVWA-VM1` (10.0.0.6)
-- `DVWA-VM2` (10.0.0.7)
-- `DVWA-VM3` (10.0.0.5)
+- `DVWA-VM1` (10.0.0.5)
+- `DVWA-VM2` (10.0.0.6)
+- `DVWA-VM3` (10.0.0.7)
 
 We have installed the following Beats on these machines:
 - Filebeat
