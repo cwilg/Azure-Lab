@@ -57,8 +57,8 @@ The machines on the internal network are not exposed to the public Internet.
 Only the `Jump-Box-Provisioner` machine can accept SSH connections from the Internet. Access to this machine is only allowed from the following IP addresses (via SSH key & firewall rules):
 - My Home Network
 
-Machines within the network (`XCorpRedTeam_VNet`) can only be accessed by the Ansible container on the `Jump-Box-Provisioner` (`Jump-Box-Provisioner-ip` = 52.149.213.10).
-- The `Jump-Box-Provisioner` also has access to the `ELK-Server` (Internal IP = 10.1.0.4; `ELK-Server-ip` = 52.162.176.231) on the (peered) `ELK-BlueTeam-VNet`.
+Machines within the network (`Web_Servers_VNet`) can only be accessed by the Ansible container on the `Jump-Box-Provisioner` (`Jump-Box-Provisioner-IP` = 40.114.7.230).
+- The `Jump-Box-Provisioner` also has access to the `ELK-Server` (Internal IP = 10.1.0.4; `ELK-Server-IP` = 13.64.153.186) on the (peered) `ELK_VNET`.
 
 A summary of the access policies in place can be found in the table below:
 
